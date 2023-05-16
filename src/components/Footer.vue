@@ -6,14 +6,14 @@
       <li>
         <a
           href="https://www.linkedin.com/in/lermyferrer"
-          class="mr-4 hover:underline text-gray-800 md:mr-6 text-base"
+          class="container-footer__ul-li"
           >Linkedin</a
         >
       </li>
       <li>
         <a
           href="https://github.com/lermyferrer"
-          class="mr-4 hover:underline text-gray-800 md:mr-6 text-base"
+          class="container-footer__ul-li"
           >Github</a
         >
       </li>
@@ -41,6 +41,10 @@ export default {
 }
 
 .container-footer__ul {
-    @apply flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0
+  @apply flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0
+}
+
+.container-footer__ul-li {
+  @apply mr-4 hover:underline text-gray-800 md:mr-6 text-base
 }
 </style>
