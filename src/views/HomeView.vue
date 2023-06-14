@@ -24,12 +24,12 @@ defineProps({
         height="100"
       />
     </aside>
-    <main class="container-template-main" flex-grow>
-      <p class="container-template-main__title">Lermy Ferrer</p>
-      <p class="container-template-main__message">
+    <main class="container-template-main dark:bg-gray-800" flex-grow>
+      <p class="container-template-main__title dark:text-white">Lermy Ferrer</p>
+      <p class="container-template-main__message dark:text-white">
         {{ message }}
       </p>
-      <p class="container-template-main__description">
+      <p class="container-template-main__description dark:text-white">
         {{ description }}
       </p>
     </main>
@@ -56,7 +56,7 @@ defineProps({
   }
 
   .container-template-main__message {
-    @apply text-2xl p-2 mt-6 text-gray-600 font-semibold text-justify
+    @apply text-2xl p-2 mt-6 text-gray-600 font-normal text-justify
   }
 
   .container-template-main__description {

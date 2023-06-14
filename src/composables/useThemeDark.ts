@@ -1,4 +1,8 @@
+import { ref } from "vue";
+
 export function useThemeDark() {
+  const toggleDarkMode = ref(document.documentElement.className === 'dark');
+
   const modeDarkLocalstorage = () => {
     if (
       localStorage.theme === "dark" ||
@@ -10,6 +14,11 @@ export function useThemeDark() {
       document.documentElement.classList.remove("dark");
     }
   };
+    
+  const changeDarkMode = () => {
+    toggleDarkMode.value = document.documentElement.classList.toggle('dark');
+    toggleDarkMode.value ? (localStorage.theme = 'dark') : (localStorage.theme = 'light');
+  }
 
-  return { modeDarkLocalstorage };
+  return { modeDarkLocalstorage, changeDarkMode };
 }

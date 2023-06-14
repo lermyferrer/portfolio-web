@@ -1,7 +1,7 @@
 <template>
   <footer class="container-footer">
     <ul
-      class="container-footer__ul"
+      class="container-footer__ul dark:text-white"
     >
       <li>
         <a
@@ -19,7 +19,7 @@
       </li>
       <li class="socials-link">
         <a
-          class="hover:underline text-gray-800 text-base"
+          class="hover:underline text-base"
           href="mailto:lermy.ferrer@gmail.com"
           title="Contact me at"
           >Contact me at</a
@@ -45,6 +45,6 @@ export default {
 }
 
 .container-footer__ul-li {
-  @apply mr-4 hover:underline text-gray-800 md:mr-6 text-base
+  @apply mr-4 hover:underline md:mr-6 text-base
 }
 </style>
