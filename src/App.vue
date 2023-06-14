@@ -28,7 +28,7 @@ const toggleDarkMode = ref(document.documentElement.className === 'dark');
     <img
         alt="dark_mode"
         class="cursor-pointer"
-        :class="[ changeDarkMode ? 'dark-mode-img' : 'light-mode-img' ]"
+        :class="[ toggleDarkMode ? 'dark-mode-img' : 'light-mode-img' ]"
         src="@/assets/images/mode_dark.png"
         @click="changeDarkMode"
       />
@@ -40,6 +40,6 @@ const toggleDarkMode = ref(document.documentElement.className === 'dark');
 
 <style scoped>
 .dark-mode-img {
-  filter: none;
+  filter: invert(100%);
 }
 </style>
