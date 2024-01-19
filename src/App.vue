@@ -3,7 +3,9 @@ import { ref } from "vue";
 
 import HomeView from "./views/HomeView.vue";
 
-const toggleDarkMode = ref(document.documentElement.className === 'dark');
+const toggleDarkMode = ref(localStorage.theme === 'dark' || (!('theme' in localStorage) &&
+  window.matchMedia('(prefers-color-scheme: dark)').matches)
+);
 
 if (
   localStorage.theme === "dark" ||
@@ -16,17 +18,21 @@ if (
 }
 
 const changeDarkMode = () => {
-  toggleDarkMode.value = document.documentElement.classList.toggle('dark');
-  toggleDarkMode.value ? (localStorage.theme = 'dark') : (localStorage.theme = 'light');
-}
+  toggleDarkMode.value = !toggleDarkMode.value;
+  document.documentElement.classList.toggle('dark', toggleDarkMode.value);
+  localStorage.theme = toggleDarkMode.value ? 'dark' : 'light';
+};
 
 </script>
 
 <template>
   <section>
     <div class="flex justify-end p-4">
-      <img alt="dark_mode" class="cursor-pointer" :class="[toggleDarkMode ? 'dark-mode-img' : 'light-mode-img']"
-        src="@/assets/images/mode_dark.png" @click="changeDarkMode" />
+      <img
+        alt="dark_mode" class="cursor-pointer" :class="{ 'dark-mode-img': toggleDarkMode, 'light-mode-img': !toggleDarkMode }"
+        src="@/assets/images/mode_dark.png"
+        @click="changeDarkMode"
+      />
     </div>
     <HomeView message="+4 years of experience as a Full-Stack Developer from Barranquilla, Colombia."
       description="Developing applications in: PHP | Laravel | Javascript | Vue.js | Angular | Typescript | Node | React Native" />

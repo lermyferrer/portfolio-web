@@ -52,14 +52,14 @@ defineProps({
   }
 
   .container-template-main__title {
-    @apply text-5xl pb-12 font-semibold text-gray-800
+    @apply pb-12 font-semibold text-gray-800 text-4xl mt-6 sm:text-5xl;
   }
 
   .container-template-main__message {
-    @apply text-2xl text-gray-600 font-normal text-justify
+    @apply text-2xl text-gray-800 font-normal text-ellipsis sm:text-justify
   }
 
   .container-template-main__description {
-    @apply text-xl mt-8 text-gray-700 text-justify
+    @apply text-xl mt-8 text-gray-800 text-ellipsis sm:text-justify
   }
 </style>

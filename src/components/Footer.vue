@@ -41,7 +41,7 @@ export default {
 }
 
 .container-footer__ul {
-  @apply flex flex-wrap items-center mt-3 text-xl font-medium text-gray-500 sm:mt-0
+  @apply flex flex-wrap items-center mt-3 text-xl font-medium text-gray-800 sm:mt-0
 }
 
 .container-footer__ul-li {
