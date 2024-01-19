@@ -22,7 +22,7 @@ defineProps({
       >
     </aside>
     <main class="container-template-main dark:bg-gray-800" flex-grow>
-      <p class="container-template-main__title dark:text-white">Hi, I’m Lermy Ferrer P.</p>
+      <p class="container-template-main__title dark:text-white">Hi, I’m Lermy Ferrer</p>
       <p class="container-template-main__message dark:text-white">
         {{ message }}
       </p>
