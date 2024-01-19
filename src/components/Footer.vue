@@ -19,10 +19,10 @@
       </li>
       <li class="socials-link">
         <a
-          class="hover:underline text-base"
+          class="hover:underline text-xl"
           href="mailto:lermy.ferrer@gmail.com"
           title="Contact me at"
-          >Contact me at</a
+          >Contact me</a
         >
       </li>
     </ul>
@@ -41,10 +41,10 @@ export default {
 }
 
 .container-footer__ul {
-  @apply flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0
+  @apply flex flex-wrap items-center mt-3 text-xl font-medium text-gray-500 sm:mt-0
 }
 
 .container-footer__ul-li {
-  @apply mr-4 hover:underline md:mr-6 text-base
+  @apply mr-4 hover:underline md:mr-6 text-xl
 }
 </style>

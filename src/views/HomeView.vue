@@ -16,18 +16,18 @@ defineProps({
 <template>
   <div class="container-template">
     <aside class="container-template__aside">
-      <img
-        alt="logo-lermy"
-        class="inline-block h-64 w-64 rounded-full border-4"
-        src="@/assets/images/mia-2.png"
-        width="100"
-        height="100"
-      />
+      <img class="rounded-full h-64 w-64 ring-gray-300 dark:ring-gray-500 pr-2" 
+        src="@/assets/images/img-face.jpeg" 
+        alt="Lermy avatar"
+      >
     </aside>
     <main class="container-template-main dark:bg-gray-800" flex-grow>
-      <p class="container-template-main__title dark:text-white">Lermy Ferrer</p>
+      <p class="container-template-main__title dark:text-white">Hi, I’m Lermy Ferrer P.</p>
       <p class="container-template-main__message dark:text-white">
         {{ message }}
+      </p>
+      <p class="container-template-main__message dark:text-white">
+        Creating highly interactive user interfaces and dynamic web sites.
       </p>
       <p class="container-template-main__description dark:text-white">
         {{ description }}
@@ -44,7 +44,7 @@ defineProps({
   }
   
   .container-template__aside {
-    @apply flex justify-center p-4 sm:p-0 md:flex-none md:w-64
+    @apply flex justify-center p-4 sm:p-0 md:flex-none
   }
 
   .container-template-main {
@@ -52,14 +52,14 @@ defineProps({
   }
 
   .container-template-main__title {
-    @apply text-5xl p-2 font-semibold text-gray-800
+    @apply text-5xl pb-12 font-semibold text-gray-800
   }
 
   .container-template-main__message {
-    @apply text-2xl p-2 mt-6 text-gray-600 font-normal text-justify
+    @apply text-2xl text-gray-600 font-normal text-justify
   }
 
   .container-template-main__description {
-    @apply text-xl p-2 mt-6 text-gray-700 text-justify
+    @apply text-xl mt-8 text-gray-700 text-justify
   }
 </style>
