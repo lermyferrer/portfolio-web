@@ -7,14 +7,14 @@
         <a
           href="https://www.linkedin.com/in/lermyferrer"
           class="container-footer__ul-li"
-          >Linkedin</a
+          >LinkedIn</a
         >
       </li>
       <li>
         <a
           href="https://github.com/lermyferrer"
           class="container-footer__ul-li"
-          >Github</a
+          >GitHub</a
         >
       </li>
       <li class="socials-link">
@@ -22,7 +22,7 @@
           class="hover:underline text-xl"
           href="mailto:lermy.ferrer@gmail.com"
           title="Contact me at"
-          >Contact me</a
+          >Contact Me</a
         >
       </li>
     </ul>
