@@ -26,7 +26,7 @@ defineProps({
       <p class="container-template-main__message dark:text-white">
         {{ message }}
       </p>
-      <p class="container-template-main__message dark:text-white">
+      <p class="container-template-main__technologies dark:text-white">
         Creating highly interactive user interfaces and dynamic web sites.
       </p>
       <p class="container-template-main__description dark:text-white">
@@ -52,10 +52,14 @@ defineProps({
   }
 
   .container-template-main__title {
-    @apply pb-12 font-semibold text-gray-800 text-4xl mt-6 sm:text-5xl;
+    @apply pb-8 font-semibold text-gray-800 text-4xl mt-4 sm:text-5xl
   }
 
   .container-template-main__message {
+    @apply text-2xl text-gray-800 font-normal text-ellipsis sm:text-justify
+  }
+
+  .container-template-main__technologies {
     @apply text-2xl text-gray-800 font-normal text-ellipsis sm:text-justify
   }
 
