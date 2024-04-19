@@ -16,20 +16,20 @@ defineProps({
 <template>
   <div class="container-template">
     <aside class="container-template__aside">
-      <img class="rounded-full h-64 w-64 ring-gray-300 dark:ring-gray-500 pr-2" 
+      <img class="rounded-full h-64 w-64 ring-gray-300 dark:ring-gray-500 pr-2 animate-fade-down" 
         src="@/assets/images/img-face.jpeg" 
         alt="Lermy avatar"
       >
     </aside>
     <main class="container-template-main dark:bg-gray-800" flex-grow>
-      <p class="container-template-main__title dark:text-white">Hi, I’m Lermy Ferrer</p>
+      <p class="container-template-main__title dark:text-white animate-fade-down">Hi, I’m <span class="container-template-main__title-name dark:text-white">Lermy Ferrer</span></p>
       <p class="container-template-main__message dark:text-white">
         {{ message }}
       </p>
       <p class="container-template-main__technologies dark:text-white">
         Creating highly interactive user interfaces and dynamic web sites.
       </p>
-      <p class="container-template-main__description dark:text-white">
+      <p class="container-template-main__description dark:text-white animate-fade-right">
         {{ description }}
       </p>
     </main>
@@ -52,7 +52,11 @@ defineProps({
   }
 
   .container-template-main__title {
-    @apply pb-8 font-semibold text-gray-800 text-4xl mt-4 sm:text-5xl
+    @apply pb-8 font-extrabold text-gray-800 text-4xl mt-4 sm:text-5xl
+  }
+  
+  .container-template-main__title-name {
+    @apply pb-8 font-extrabold text-blue-900 text-4xl mt-4 sm:text-5xl
   }
 
   .container-template-main__message {
@@ -60,7 +64,7 @@ defineProps({
   }
 
   .container-template-main__technologies {
-    @apply text-2xl text-gray-800 font-normal text-ellipsis sm:text-justify
+    @apply text-2xl text-yellow-500 font-normal text-ellipsis sm:text-justify
   }
 
   .container-template-main__description {

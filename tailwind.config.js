@@ -6,8 +6,14 @@ module.exports = {
   },
   variants: {
     extend: {
-      fontSize: ['responsive', 'hover', 'focus', 'group-hover']
+      fontSize: ['responsive', 'hover', 'focus', 'group-hover'],
+      colors: {
+        'regal-blue': '#0A0A65',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('tailwindcss-animated')
+  ],
 }
