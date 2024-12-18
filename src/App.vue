@@ -34,8 +34,8 @@ const changeDarkMode = () => {
         @click="changeDarkMode"
       />
     </div>
-    <HomeView message="+4 years of experience as a Full-Stack Developer from Barranquilla, Colombia."
-      description="Developing applications in: PHP | Laravel | Javascript | Vue.js | Angular | Typescript | Node | React Native" />
+    <HomeView message="+5 years of experience as a Full-Stack Developer from Barranquilla, Colombia."
+      description="Developing applications in: Laravel | Javascript | Vue | Angular | Typescript | Node | React Native | Git | Github" />
   </section>
 </template>
 
